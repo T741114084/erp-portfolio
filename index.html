@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="装修公司 ERP 落地项目作品：从报价到核算的最小业务闭环，独立完成需求梳理、系统搭建与上线验证。"/>
+<title>落地项目作品｜装修公司 ERP：从报价到核算的最小业务闭环</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'PingFang SC','Microsoft YaHei','Segoe UI',Arial,sans-serif; background:#0B1B33; color:#1A2433; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+
+  /* Hero */
+  .hero { background:linear-gradient(160deg,#0E2A52 0%,#0B1B33 60%,#12305E 100%); color:#fff; padding:52px 0 40px; text-align:center; }
+  .badge { display:inline-block; background:rgba(139,200,234,.15); border:1px solid rgba(139,200,234,.45); color:#A9D6F5; font-size:13px; padding:4px 14px; border-radius:999px; letter-spacing:.5px; }
+  .hero h1 { font-size:30px; font-weight:700; margin:18px auto 12px; max-width:820px; line-height:1.35; }
+  .hero .sub { color:#C9DAF0; font-size:15px; max-width:720px; margin:0 auto; }
+  .hero .tags { margin-top:16px; color:#8FB6E8; font-size:13px; letter-spacing:1px; }
+  .hero .roleline { margin-top:14px; color:#7FB4EE; font-size:13.5px; }
+
+  /* Project meta bar */
+  .meta { display:flex; flex-wrap:wrap; gap:14px; background:#0E2A52; color:#D5E4F8; border-radius:14px; padding:18px 20px; margin:22px 0 0; justify-content:center; }
+  .meta .item { text-align:center; flex:1 1 150px; }
+  .meta .k { color:#8FB6E8; font-size:12px; letter-spacing:.5px; }
+  .meta .v { font-size:15px; font-weight:600; margin-top:2px; }
+
+  /* Section */
+  .sec { background:#fff; border-radius:16px; margin:20px 0; padding:28px 26px; box-shadow:0 4px 18px rgba(11,27,51,.12); }
+  .sec h2 { font-size:20px; color:#0E2A52; margin-bottom:14px; padding-left:12px; border-left:4px solid #2563EB; }
+  .sec h3 { font-size:16px; color:#0E2A52; margin:16px 0 8px; }
+  p.lead { color:#3D4A5F; font-size:15px; }
+  .muted { color:#6B7280; font-size:13px; }
+  .img { width:100%; border-radius:12px; margin:8px 0; display:block; }
+  .imgcap { text-align:center; color:#6B7280; font-size:12.5px; margin:6px 0 14px; }
+
+  /* Video */
+  .videoBox { background:#000; border-radius:14px; overflow:hidden; margin:10px 0 6px; }
+  .videoBox video { width:100%; display:block; aspect-ratio:16/9; background:#000; }
+  .vnote { color:#6B7280; font-size:12.5px; text-align:center; margin:8px 0 0; }
+  .vnote a { color:#2563EB; }
+
+  /* Lists */
+  ol.steps { padding-left:22px; }
+  ol.steps li { margin:6px 0; color:#33415A; }
+
+  /* Feature grid */
+  .grid { display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
+  .card { flex:1 1 250px; min-width:0; background:#F4F7FC; border:1px solid #E4EAF5; border-radius:12px; padding:14px 16px; }
+  .card .no { color:#2563EB; font-weight:700; font-size:13px; }
+  .card .t { font-weight:600; color:#0E2A52; margin:2px 0 6px; font-size:15px; }
+  .card .d { color:#4A5568; font-size:13px; }
+
+  /* Role & Value points */
+  .vals { display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
+  .val { flex:1 1 250px; min-width:0; background:linear-gradient(135deg,#EAF2FF,#F7FAFF); border:1px solid #D6E4FB; border-radius:12px; padding:16px; }
+  .val .t { font-weight:600; color:#0E2A52; margin-bottom:6px; }
+  .val .d { color:#3D4A5F; font-size:13.5px; }
+
+  /* Tech chips */
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .chip { background:#EAF2FF; border:1px solid #C9DDFA; color:#1D4ED8; border-radius:999px; padding:4px 13px; font-size:12.5px; }
+
+  /* Highlight box */
+  .hl { background:#FDF6E9; border:1px solid #F0D9A8; border-left:4px solid #D97706; border-radius:10px; padding:14px 16px; margin-top:12px; font-size:14px; color:#7C4A03; }
+
+  /* Contact */
+  .contact { text-align:center; }
+  .cta { background:linear-gradient(135deg,#2563EB,#1D4ED8); color:#fff; text-align:center; padding:18px 16px; border-radius:12px; margin-top:8px; font-size:16px; font-weight:600; }
+
+  footer { color:#7C8FB2; text-align:center; font-size:12.5px; padding:18px 0 30px; }
+  @media (max-width:600px){ .hero h1{font-size:22px;} .sec{padding:20px 16px;} .meta{flex-direction:column;gap:10px;} }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <span class="badge">落地项目作品 · 业务数字化定制</span>
+    <h1>装修公司 ERP 落地：<br/>从报价到核算的最小业务闭环</h1>
+    <p class="sub">一个装修行业从业者，用系统把自己真实做了十几年的线下生意翻译成可运行的管理 SOP。不依赖昂贵 SaaS，独立完成需求梳理、流程设计、系统搭建与上线验证——报价、合同、施工、收款、核算，一套系统到底。</p>
+    <div class="tags">#业务系统定制　#ERP落地　#全流程闭环</div>
+    <div class="roleline">个人独立完成：需求分析 → 业务流程梳理 → 系统搭建 → 规则固化 → 演示验证</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- PROJECT META -->
+  <div class="sec" style="padding:0;">
+    <div class="meta">
+      <div class="item"><div class="k">项目角色</div><div class="v">独立完成 · Owner</div></div>
+      <div class="item"><div class="k">业务背景</div><div class="v">装修公司真实业务</div></div>
+      <div class="item"><div class="k">系统覆盖</div><div class="v">9 大环节全链路</div></div>
+      <div class="item"><div class="k">部署方式</div><div class="v">私有化 · 数据不出本机</div></div>
+      <div class="item"><div class="k">演示时长</div><div class="v">28 分钟实操</div></div>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <div class="sec">
+    <h2>一、项目背景：为什么自己动手做一套 ERP</h2>
+    <p class="lead">昂贵的管理软件用不起，通用 SaaS 又不贴合装修生意的实际流程。项目一多，报价靠表格、合同靠模板、催款靠电话、对账靠翻聊天记录，效率和利润都漏在细节里。作为长期泡在工地的从业者，我比通用软件厂商更懂这些真实痛点。</p>
+    <ol class="steps">
+      <li>前期商务环节慢：报价改价来回传文件，客户等、自己累</li>
+      <li>施工期靠催：供应商、班组进度全靠电话盯，项目拖延不知道卡在哪个环节</li>
+      <li>完工算不清账：已付款、待回款、盈亏没有一本明白账</li>
+    </ol>
+    <div class="hl">核心思路：不是「先买软件再迁就流程」，而是「先梳理线下真实流程，再翻译成系统」——系统为人服务，不为人适应系统。</div>
+  </div>
+
+  <!-- METHOD -->
+  <div class="sec">
+    <h2>二、我的方法：把线下生意翻译成系统</h2>
+    <ol class="steps">
+      <li><b>梳理业务</b>：逐环节走查真实工作流，找到最耗人、最容易漏钱的断点，确定系统要优先解决的业务闭环</li>
+      <li><b>搭建闭环</b>：把业务流程串成「报价 → 合同 → 施工 → 收款 → 核算」的完整链路，保证数据在环节间连续流转、不留账外死角</li>
+      <li><b>固化规则</b>：把多年线下经验变成可自动执行的系统规则——增项必须书面确认才计入结算、对账不平必须列出差异项、成本超支自动预警</li>
+    </ol>
+    <img class="img" src="assets/business-closed-loop.jpg" alt="最小业务闭环：报价与合同 → 施工管控 → 采购入库 → 完工核算"/>
+    <p class="imgcap">最小业务闭环：报价与合同 → 施工管控 → 采购入库 → 完工核算</p>
+  </div>
+
+  <!-- MODULES -->
+  <div class="sec">
+    <h2>三、系统能力：9 大环节全覆盖</h2>
+    <p class="lead">以下功能均来自系统真实实操演示，每一步都是可跑通的能力，不是 PPT 概念。</p>
+    <div class="grid">
+      <div class="card"><div class="no">01</div><div class="t">项目建档</div><div class="d">新建项目自动生成档案，编号自动生成（如 PRJ-2026-008），备注可选填</div></div>
+      <div class="card"><div class="no">02</div><div class="t">分项报价</div><div class="d">选类目（环氧地坪/翻新乳胶漆/砌墙等）、填数量、改单价，金额自动计算</div></div>
+      <div class="card"><div class="no">03</div><div class="t">报价单</div><div class="d">单头编号自动生成；含税/优惠/商务条款可配置；客户版 + 内部谈判版双导出，内部版带函数实时算利润率，防止亏损签单</div></div>
+      <div class="card"><div class="no">04</div><div class="t">合同签订</div><div class="d">录入编号、金额、质保月；一键按模板生成收款节点，预期预警与催办自动生效；导出合同与台账</div></div>
+      <div class="card"><div class="no">05</div><div class="t">施工管控</div><div class="d">工序逐项勾验并记录验收人与时间；不合格自动进入返工流程；增项提交确认后才施工</div></div>
+      <div class="card"><div class="no">06</div><div class="t">采购入库</div><div class="d">采购单待下单 → 材料入库，成本自动归属对应工地与采购人；支持比价、新增材料</div></div>
+      <div class="card"><div class="no">07</div><div class="t">收款核销</div><div class="d">收款节点 3331（30/30/30/10），开工定金 30%；逐笔核销结清、登记付款，开工/停工/完工一键切换</div></div>
+      <div class="card"><div class="no">08</div><div class="t">回款台账</div><div class="d">应收 − 已收 = 欠款，逐笔可追溯；月度经营情况清晰显示</div></div>
+      <div class="card"><div class="no">09</div><div class="t">预警中心</div><div class="d">缺成本预算、增项超上限、成本超支、应收逾期自动预警；标记已处理，一键立即重算</div></div>
+    </div>
+  </div>
+
+  <!-- DEMO -->
+  <div class="sec">
+    <h2>四、落地演示：28 分钟完整业务流程实操</h2>
+    <p class="lead">从新建项目、分项报价、生成报价单，到合同签订、施工管控、采购入库、收款核销、完工核算，全程真实操作演示。</p>
+    <div class="videoBox">
+      <video controls preload="metadata" poster="assets/demo-cover.jpg">
+        <source src="https://aka.doubaocdn.com/s/nBUKcjKqlG" type="video/mp4"/>
+        您的浏览器不支持视频播放，请 <a href="https://aka.doubaocdn.com/s/nBUKcjKqlG">点击这里下载观看</a>（MP4 · 720P）。
+      </video>
+    </div>
+    <p class="vnote">视频约 28 分钟 · 演示环境数据 · 无法播放时可<a href="https://aka.doubaocdn.com/s/nBUKcjKqlG" target="_blank" rel="noopener">点此直接打开视频</a></p>
+  </div>
+
+  <!-- DEMO DATA -->
+  <div class="sec">
+    <h2>五、演示数据与校验</h2>
+    <p class="lead">以下是视频实录中的一组完整业务数据，用于展示系统的可核算、可追溯能力：</p>
+    <div class="grid">
+      <div class="card"><div class="no">·</div><div class="t">合同编号</div><div class="d">PRJ-2026-008</div></div>
+      <div class="card"><div class="no">·</div><div class="t">工程面积</div><div class="d">450㎡</div></div>
+      <div class="card"><div class="no">·</div><div class="t">合同金额</div><div class="d">¥102,563.00</div></div>
+      <div class="card"><div class="no">·</div><div class="t">付款节点</div><div class="d">与合同金额逐笔相符（3331）</div></div>
+      <div class="card"><div class="no">·</div><div class="t">增项上限</div><div class="d">8%（¥8,205.04）</div></div>
+    </div>
+    <p class="muted" style="margin-top:12px;">一致性校验：付款节点合计 = 合同金额；增项未超上限；回款台账 = 应收 − 已收，逐笔可追溯。</p>
+  </div>
+
+  <!-- VALUE -->
+  <div class="sec">
+    <h2>六、这套系统解决了什么</h2>
+    <div class="vals">
+      <div class="val"><div class="t">前期商务提速</div><div class="d">内卷环境下，快速搞定报价、合同等前期商务环节，适合中小企业、一人公司老板搭建最小业务闭环</div></div>
+      <div class="val"><div class="t">项目进度实时管控</div><div class="d">签单后实时管控项目进度，不用反复电话催供应商，减少项目拖延</div></div>
+      <div class="val"><div class="t">完工轻松核算</div><div class="d">已付款、待回款、盈亏情况一目了然，账目透明可追溯</div></div>
+    </div>
+    <img class="img" src="assets/value-points.jpg" alt="三大价值：前期商务提速、项目进度实时管控、完工轻松核算"/>
+  </div>
+
+  <!-- TECH -->
+  <div class="sec">
+    <h2>七、设计与实现要点</h2>
+    <ul style="padding-left:22px;color:#33415A;">
+      <li><b>流程即数据</b>：报价、合同、施工、收款、核算共用一套主数据，杜绝「报价一个数、结算另一个数」</li>
+      <li><b>规则引擎前置</b>：增项上限、成本预警、应收逾期等业务规则自动执行，降低对人的依赖</li>
+      <li><b>双版本报价单</b>：客户版与内部谈判版分离，内部版实时算利润率，守住签单底线</li>
+      <li><b>私有化部署</b>：数据不出本机，规避云端 SaaS 的数据安全与长期订阅成本</li>
+    </ul>
+    <div class="chips">
+      <span class="chip">业务流程梳理</span><span class="chip">SOP 固化</span><span class="chip">规则配置</span><span class="chip">自动核算</span><span class="chip">私有化部署</span><span class="chip">演示验收</span>
+    </div>
+  </div>
+
+  <!-- REFLECTION -->
+  <div class="sec">
+    <h2>八、复盘与可复用性</h2>
+    <p class="lead">这套系统不只解决装修一个行业。它沉淀出一套可复用的方法论：先走查线下真实流程，找到最耗人、最容易漏钱的环节，再翻译成可运行的系统。</p>
+    <div class="vals">
+      <div class="val"><div class="t">能力沉淀</div><div class="d">把多年行业经验固化成系统规则，形成可复用、可交付的业务模板</div></div>
+      <div class="val"><div class="t">行业迁移</div><div class="d">工厂、门店、仓库——任何依赖线下流程的中小生意，都能用同一套方法落地</div></div>
+      <div class="val"><div class="t">开放改进</div><div class="d">演示环境数据可复算、可校验；欢迎交流真实的业务落地场景</div></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="sec">
+    <h2>关于我与联系方式</h2>
+    <p class="lead">我是装修行业从业者，长期深入一线工地与商务环节，熟悉中小企业真实经营流程，能够把线下业务翻译成可直接运行的业务系统。期待在业务数字化、流程梳理、系统落地方向贡献价值。</p>
+    <div class="contact">
+      <div class="cta" style="margin-bottom:14px;">期待与您的交流，欢迎联系我洽谈岗位或项目机会</div>
+      <div class="vals" style="max-width:640px;margin:0 auto;">
+        <div class="val"><div class="t">邮箱</div><div class="d" style="font-size:16px;font-weight:600;color:#1D4ED8;">741114084@qq.com</div></div>
+        <div class="val"><div class="t">电话 / 微信</div><div class="d" style="font-size:16px;font-weight:600;color:#1D4ED8;">13265528512</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>装修 ERP 落地项目作品 · 私有化部署 · 数据不出本机 · 演示环境数据可复算</footer>
+
+</body>
+</html>
